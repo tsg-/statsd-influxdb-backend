@@ -1,39 +1,22 @@
-StatsD InfluxDB backend
------------------------
+CurrencyCloud StatsD InfluxDB backend
+-------------------------------------
 
-**LOOKING FOR A MAINTAINER:** [I am looking for a maintainer for this project](https://github.com/bernd/statsd-influxdb-backend/issues/26)
+## Preamble
+This is a fork of several upstream statsd-influxdb-backend projects which have been merged into a single npm module
+in order to permit collection of influxdb tags via statsd on AWS.
 
-A naive [InfluxDB](http://influxdb.org/) backend for
-[StatsD](https://github.com/etsy/statsd).
+It is offered as-is in the hope it will prove useful.
 
-It can ship events to InfluxDB using two different strategies which can be
-used at the same time.
+Original implementation: [https://github.com/bernd/statsd-influxdb-backend](https://github.com/bernd/statsd-influxdb-backend)
 
-### Regular Flush Strategy
-
-StatsD will flush aggregated metrics with a configured interval. This is
-the regular StatsD mode of operation.
-
-### Proxy Strategy
-
-This will map every incoming StatsD packet to an InfluxDB event. It's useful
-if you want to store the raw events in InfluxDB without any rollups.
-
-## CAVEATS
-
-This is pretty young and I do not have much experience with InfluxDB yet.
-Especially the event buffering and the event mapping might be problematic
-and inefficient.
-
-InfluxDB is also pretty young and there might be breaking changes until it
-reaches 1.0.
-
-Please be careful!
+Upstream parents: 
+* [https://github.com/guydou/statsd-influxdb-backend](https://github.com/guydou/statsd-influxdb-backend)
+* [https://github.com/gillesdemey/statsd-influxdb-backend](https://github.com/gillesdemey/statsd-influxdb-backend)
 
 ## Installation
 
     $ cd /path/to/statsd
-    $ npm install statsd-influxdb-backend
+    $ npm install currencycloud-statsd-influxdb-backend
 
 ## Configuration
 
@@ -44,7 +27,7 @@ You can configure the following settings in your StatsD config file.
   graphitePort: 2003,
   graphiteHost: "graphite.example.com",
   port: 8125,
-  backends: [ "./backends/graphite", "statsd-influxdb-backend" ],
+  backends: [ "./backends/graphite", "currencycloud-statsd-influxdb-backend" ],
 
   influxdb: {
     host: '127.0.0.1',   // InfluxDB host. (default 127.0.0.1)
@@ -64,20 +47,21 @@ You can configure the following settings in your StatsD config file.
                            // (default 1000)
     },
     includeStatsdMetrics: false, // Send internal statsd metrics to InfluxDB. (default false)
-    includeInfluxdbMetrics: false // Send internal backend metrics to InfluxDB. (default false)
-                                  // Requires includeStatsdMetrics to be enabled.
+    includeInfluxdbMetrics: false, // Send internal backend metrics to InfluxDB. (default false)
+    keyNameSanitize: false         // permits tags to be passed through without stripping the separating commas between them
+                                   // Requires includeStatsdMetrics to be enabled.
   }
 }
 ```
 
 ## Activation
 
-Add the `statsd-influxdb-backend` to the list of StatsD backends in the config
+Add the `currencycloud-statsd-influxdb-backend` to the list of StatsD backends in the config
 file and restart the StatsD process.
 
 ```js
 {
-  backends: ['./backends/graphite', 'statsd-influxdb-backend']
+  backends: [..., 'currencycloud-statsd-influxdb-backend']
 }
 ```
 

@@ -1,7 +1,7 @@
 {
-  "name": "statsd-influxdb-backend",
-  "version": "0.6.0",
-  "description": "InfluxDB backend for StatsD",
+  "name": "currencycloud-statsd-influxdb-backend",
+  "version": "0.7.0",
+  "description": "InfluxDB backend forked from statsd-influxdb-backendStatsD incorporating statsd tags for influxdb > 0.9 from gillesdemey/statsd-influxdb-backend",
   "main": "lib/influxdb.js",
   "dependencies": {
   },
@@ -10,16 +10,35 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/bernd/statsd-influxdb-backend.git"
+    "url": "git://github.com/jeremy-cc/statsd-influxdb-backend.git"
   },
   "keywords": [
     "influxdb",
     "statsd",
-    "metrics"
+    "metrics",
+    "currencycloud"
   ],
   "author": "Bernd Ahlers <bernd@tuneafish.de>",
+  "contributors": [
+    {
+      "name": "RR Feng",
+      "url" : "https://github.com/rrfeng"
+    },
+    {
+      "name": "Guy Doulberg",
+      "url": "https://github.com/guydou"
+    },
+    {
+      "name": "Giles De Mey",
+      "url": "https://github.com/gillesdemey"
+    },
+    {
+      "name": "Jeremy Botha",
+      "url": "https://github.com/jeremy-cc"
+    }
+  ],
   "license": "BSD",
   "bugs": {
-    "url": "https://github.com/bernd/statsd-influxdb-backend/issues"
+    "url": "https://github.com/jeremy-cc/statsd-influxdb-backend/issues"
   }
 }
