@@ -1,6 +1,9 @@
 StatsD InfluxDB backend - CHANGELOG
 -----------------------------------
 
+## v0.9.1 (2017-06-28)
+Merged changes from https://github.com/nevins-b/statsd-influxdb-backend
+
 ## v0.9.0 (2017-06-28)
 Merged changes from https://github.com/gillesdemey/statsd-influxdb-backend
 
