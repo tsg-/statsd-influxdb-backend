@@ -42,7 +42,7 @@ You can configure the following settings in your StatsD config file.
     },
     proxy: {
       enable: false,       // Enable the proxy strategy. (default false)
-      addSuffix: true,     // Shall suffix be added to the metric name suffix. (default true)
+      addSuffix: true,     // Shall suffix be appended to the metric name. (default true)
       suffix: 'raw',       // Metric name suffix. (default 'raw')
       flushInterval: 1000  // Flush interval for the internal buffer.
                            // (default 1000)
