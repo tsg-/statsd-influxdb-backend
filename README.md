@@ -45,11 +45,11 @@ You can configure the following settings in your StatsD config file.
       flushInterval: 1000  // Flush interval for the internal buffer.
                            // (default 1000)
     },
-    includeStatsdMetrics: false, // Send internal statsd metrics to InfluxDB. (default false)
-    includeInfluxdbMetrics: false, // Send internal backend metrics to InfluxDB. (default false)
-    keyNameSanitize: false         // permits tags to be passed through without stripping the separating commas between them
-                                   // Requires includeStatsdMetrics to be enabled.
-  }
+  },
+  includeStatsdMetrics: false,   // Send internal statsd metrics to InfluxDB. (default false)
+  includeInfluxdbMetrics: false, // Send internal backend metrics to InfluxDB. (default false)
+  keyNameSanitize: false         // permits tags to be passed through without stripping the separating commas between them
+                                 // Requires includeStatsdMetrics to be enabled.
 }
 ```
 
