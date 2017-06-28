@@ -1,4 +1,4 @@
-CurrencyCloud StatsD InfluxDB backend
+StatsD InfluxDB backend
 -------------------------------------
 
 ## Preamble

@@ -1,10 +1,9 @@
 {
   "name": "currencycloud-statsd-influxdb-backend",
   "version": "0.8.1",
-  "description": "InfluxDB backend forked from statsd-influxdb-backendStatsD incorporating statsd tags for influxdb > 0.9 from gillesdemey/statsd-influxdb-backend",
+  "description": "InfluxDB backend for StatsD",
   "main": "lib/influxdb.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
