@@ -1,11 +1,15 @@
 StatsD InfluxDB backend - CHANGELOG
 -----------------------------------
 
-## v0.7.0 (2017-03-15)
+## v0.8.0 (2017-03-15)
 * Fork from [https://github.com/guydou/statsd-influxdb-backend](https://github.com/guydou/statsd-influxdb-backend) into
   ccycloud namespace
 * merge statsd tag functionality from [https://github.com/gillesdemey/statsd-influxdb-backend](https://github.com/gillesdemey/statsd-influxdb-backend) 
   into this version 
+  
+## v0.7.0 (2016-10-01)
+
+* Modified `defaultRetentionPolicy` to work with new databases created in influxDb v1.0
 
 ## v0.6.0 (2015-06-23)
 
