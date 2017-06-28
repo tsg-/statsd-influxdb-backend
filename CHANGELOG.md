@@ -1,6 +1,9 @@
 StatsD InfluxDB backend - CHANGELOG
 -----------------------------------
 
+## v0.9.0 (2017-06-28)
+Merged changes from https://github.com/gillesdemey/statsd-influxdb-backend
+
 ## v0.8.0 (2017-03-15)
 * Fork from [https://github.com/guydou/statsd-influxdb-backend](https://github.com/guydou/statsd-influxdb-backend) into
   ccycloud namespace

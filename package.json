@@ -1,6 +1,6 @@
 {
-  "name": "currencycloud-statsd-influxdb-backend",
-  "version": "0.8.1",
+  "name": "statsd-influxdb-backend",
+  "version": "0.9.0",
   "description": "InfluxDB backend for StatsD",
   "main": "lib/influxdb.js",
   "dependencies": {},
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jeremy-cc/statsd-influxdb-backend.git"
+    "url": "git://github.com/naspersclassifieds-shared/statsd-influxdb-backend.git"
   },
   "keywords": [
     "influxdb",
@@ -34,10 +34,14 @@
     {
       "name": "Jeremy Botha",
       "url": "https://github.com/jeremy-cc"
+    },
+    {
+      "name": "Dmytro Zavalkin",
+      "url": "https://github.com/dzavalkinolx"
     }
   ],
   "license": "BSD",
   "bugs": {
-    "url": "https://github.com/jeremy-cc/statsd-influxdb-backend/issues"
+    "url": "https://github.com/naspersclassifieds-shared/statsd-influxdb-backend/issues"
   }
 }
