@@ -1,6 +1,9 @@
 StatsD InfluxDB backend - CHANGELOG
 -----------------------------------
 
+## v0.9.5 (2017-06-28)
+Fixed tag support in set key
+
 ## v0.9.4 (2017-06-28)
 Fixed config.influxdb.proxy.addSuffix flag handling
 

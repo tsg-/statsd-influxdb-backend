@@ -1,6 +1,6 @@
 {
   "name": "statsd-influxdb-backend",
-  "version": "0.9.4",
+  "version": "0.9.5",
   "description": "InfluxDB backend for StatsD",
   "main": "lib/influxdb.js",
   "dependencies": {},
