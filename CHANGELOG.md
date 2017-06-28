@@ -1,6 +1,9 @@
 StatsD InfluxDB backend - CHANGELOG
 -----------------------------------
 
+## v0.9.3 (2017-06-28)
+Updated documentation on how to use our statsd-influxdb-backend fork in the project
+
 ## v0.9.2 (2017-06-28)
 Added possibility to disable appending proxy suffix to metric name
 

@@ -16,7 +16,7 @@ Upstream parents:
 ## Installation
 
     $ cd /path/to/statsd
-    $ npm install currencycloud-statsd-influxdb-backend
+    $ npm install https://github.com/naspersclassifieds-shared/statsd-influxdb-backend
 
 ## Configuration
 
@@ -24,10 +24,8 @@ You can configure the following settings in your StatsD config file.
 
 ```js
 {
-  graphitePort: 2003,
-  graphiteHost: "graphite.example.com",
   port: 8125,
-  backends: [ "./backends/graphite", "currencycloud-statsd-influxdb-backend" ],
+  backends: ["statsd-influxdb-backend"],
 
   influxdb: {
     host: '127.0.0.1',   // InfluxDB host. (default 127.0.0.1)
@@ -57,12 +55,12 @@ You can configure the following settings in your StatsD config file.
 
 ## Activation
 
-Add the `currencycloud-statsd-influxdb-backend` to the list of StatsD backends in the config
+Add the `statsd-influxdb-backend` to the list of StatsD backends in the config
 file and restart the StatsD process.
 
 ```js
 {
-  backends: [..., 'currencycloud-statsd-influxdb-backend']
+  backends: [..., 'statsd-influxdb-backend']
 }
 ```
 
